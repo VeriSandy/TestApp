@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title text-center>
+         Edit Address
+      </ion-title>
+      </ion-navbar>
+    </ion-header>
+
+
+<ion-content padding>
+    <ion-item class="special_pric">
+        <ion-label>Select Area</ion-label>
+        <ion-select [(ngModel)]="Area" (ionChange)= SetArea(Area)>
+        <ion-option [value]="item.AREA_NAME" *ngFor="let item of dataset">{{item.AREA_NAME}}</ion-option>
+       </ion-select>
+</ion-item>
+<ion-item class="special_pric">
+          <ion-label>Select Locality</ion-label>
+          <ion-select [(ngModel)]="Locality" (ionChange)= SetLocality(Locality)>
+          <ion-option [value]="item.AREA_NAME" *ngFor="let item of localitydetails">{{item.LOCATION_NAME}}</ion-option>
+         </ion-select>
+</ion-item>
+<ion-item class="special_pric">
+            <ion-textarea placeholder="Address" [(ngModel)]="Address"></ion-textarea>
+</ion-item>
+
+<ion-item class="special_pric">
+              <ion-label>Drop with neighbour</ion-label>
+              <ion-checkbox [(ngModel)]="Neighbour"></ion-checkbox>
+</ion-item>
+
+<ion-item class="special_pric">
+                <ion-label>Drop with Security</ion-label>
+                <ion-checkbox [(ngModel)]="Security"></ion-checkbox>
+</ion-item>
+
+    <div padding>
+        <button padding ion-button color="twitter" (click)="saveAddress()">Save</button>
+    </div>
+</ion-content>

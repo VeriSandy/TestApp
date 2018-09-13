@@ -1,0 +1,28 @@
+page-home {
+.logo_style
+{
+    height: 40px;
+    width: 80px;
+    margin-left:0px;
+    display: block;
+    padding: 0px 0px 0px 0px;
+}
+.searchbar_style{
+    background-color:#EA003B;    
+}
+.slide_style{
+    padding: 0px 0px 0px 0px;
+        height: 150px;
+        width: 100%;
+}
+.item-note
+{
+    font-family: Roboto, Arial, sans-serif;
+}
+[scrollbar-y-auto] .scroll-content {
+    overflow-x: hidden;
+   // float: right;
+    //width: 5px;
+  }
+
+}

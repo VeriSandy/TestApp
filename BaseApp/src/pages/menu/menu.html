@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>
+     My Account
+  </ion-title>
+  </ion-navbar>
+  <ion-toolbar color="forcard" *ngIf="loggedIn" class="font_description_header" padding>
+    <ion-icon name="person"></ion-icon> &nbsp;&nbsp;&nbsp;{{phone}}
+</ion-toolbar>
+<ion-toolbar *ngIf="loggedIn" color="light">
+     
+        <ion-card class="wordwrapWITHWidth">
+            <ion-icon name="locate"></ion-icon>&nbsp;&nbsp;&nbsp;{{address}}
+            <ion-icon name="create" item-end tappable (click)="editaddress()"></ion-icon>
+          </ion-card>
+        </ion-toolbar>
+  
+<ion-toolbar *ngIf="loggedoff">
+      <ion-item no-lines>
+      <button ion-button outline item-start color="primary" (click)="gotologin()">Login</button>
+      <button ion-button outline item-end color="primary" (click)="gotologin()">SignUp</button>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list class=“item-borderless”>
+      <ion-item  tappable (click)="openorders()">
+        <ion-icon name="list-box"></ion-icon>
+          Orders
+      </ion-item>
+      <ion-item tappable (click)="openoffers()">
+        <ion-icon name="megaphone"></ion-icon>
+          Offers
+      </ion-item>
+      <ion-item tappable (click)="opencontact()">
+        <ion-icon name="mail"></ion-icon>
+          Contact us
+      </ion-item>
+      <ion-item tappable (click)="openfaq()">
+        <ion-icon name="help-circle"></ion-icon>
+          FAQs
+      </ion-item>
+      <ion-item tappable (click)="dologout()">
+        <ion-icon name="log-out"></ion-icon>
+          Signout
+      </ion-item>
+  </ion-list>
+</ion-content>

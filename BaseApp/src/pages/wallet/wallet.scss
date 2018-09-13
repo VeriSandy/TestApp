@@ -1,0 +1,114 @@
+page-wallet {
+    .font_headline
+    {
+        font-family: Roboto, Arial, sans-serif;
+        //font-style: normal;
+        font-size: 18px;
+        line-height:28px;
+        text-align: left;
+        color:#212121;
+        font-weight:400;
+    }
+    .font_headline2
+    {
+        font-family: Roboto, Arial, sans-serif;
+        //font-style: normal;
+        font-size: 15px;
+        line-height:20px;
+        text-align: center;
+        color:#212121;
+        font-weight:400;
+    }
+    .font_headline3
+    {
+        font-family: Roboto, Arial, sans-serif;
+        //font-style: normal;
+        font-size: 15px;
+        line-height:20px;
+        //text-align: center;
+        color:#212121;
+        font-weight:400;
+    }
+    .special_pric
+    {
+        font-family: Roboto, Arial, sans-serif;
+       // font-style: normal;
+       font-weight:400;
+        font-size: 14px;
+        color:#488aff;
+        line-height:19.6px;
+
+       // text-align: center;
+    }
+    .special_pric2
+    {
+        font-family: Roboto, Arial, sans-serif;
+       // font-style: normal;
+       font-weight:300;
+        font-size: 12px;
+        color:grey;
+        line-height:19.6px;
+
+       // text-align: center;
+    }
+    .special_pric_new
+    {
+        font-family: Roboto, Arial, sans-serif;
+        font-weight:400;
+        font-size: 14px;
+        color:white;
+        line-height:2px;
+        background-color: #f53d3d;
+
+       // text-align: center;
+    }
+    .price_text
+    {
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 28px;
+        font-weight:500;
+        //line-height:39.2px;
+
+
+    }
+    .price_text2
+    {
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 20px;
+        font-weight:400;
+        color:#488aff;
+        //line-height:39.2px;
+
+
+    }
+    .font_description_header
+    {
+        font-family: Roboto, Arial, sans-serif;
+        font-weight:400;
+        font-size: 14px;
+        color:#878787;
+        line-height:25px;
+        
+    }
+    .font_description_text
+    {
+        font-family: Roboto, Arial, sans-serif;
+        //font-weight:400;
+        font-size: 14px;
+        color:#878787;
+        line-height:19.6px;
+        display: block;
+        padding: 10px 10px 0px 10px;
+    }
+    .ion-card {
+        border: none !important;
+      }
+      .thumbnail_style
+      {
+        height: 15vh;
+         width: auto;
+         margin: auto;
+         display: block;
+        // text-align: center;
+      }
+}

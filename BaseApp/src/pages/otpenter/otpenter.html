@@ -1,0 +1,26 @@
+<ion-content padding="true">
+    <div class="login-content">
+
+        <!-- Logo -->
+        <div padding-horizontal text-center>
+          <div class="logo">
+             <img src="assets/imgs/loginlogo.png" class="logo">
+          </div>
+          <p text-center ion-text padding=true color="dark"><strong>Please enter OTP No</strong></p>
+          <ion-item>
+              <ion-label floating>
+                <ion-icon name="key" item-start class="text-primary"></ion-icon>
+                OTP
+              </ion-label>
+              <ion-input type="password" maxlength="6" [(ngModel)]="eneteredotp"></ion-input>
+          </ion-item>
+
+          <div padding>
+            <button padding ion-button color="twitter" (click)="validateOTP()">Validate</button>
+          </div>
+          <div>
+          <p ion-text color="primary" tappable (click)="regenerateOTP()">Didn't recieve OTP?</p>
+          </div>
+          </div>
+        </div>
+  </ion-content>

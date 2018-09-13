@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+    Add Money to Wallet
+  </ion-title>
+  </ion-navbar>
+  <ion-toolbar color="forcard">
+    <ion-item class="special_pric" no-lines>
+        Available Main Balance: ₹{{balance.MAIN_BALANCE}}
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+<ion-item>
+<ion-label floating>
+Amount (₹)
+</ion-label>
+<ion-input type="tel" [(ngModel)]="amount_add"></ion-input>
+</ion-item>
+<ion-item>
+    <button ion-button outline item-end color="third" (click)="addhundred()">+ ₹ 100</button>
+    <button ion-button outline item-end color="third" (click)="addtwohundred()">+ ₹ 200</button>
+    <button ion-button outline item-end color="third" (click)="addfivehundred()">+ ₹ 500</button>
+</ion-item>
+<ion-item no-lines>
+<button padding ion-button color="twitter" (click)="AddMoney()">Proceed to Add Money</button>
+</ion-item>
+
+</ion-content>

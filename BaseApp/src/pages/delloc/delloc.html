@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+      <ion-title text-center>
+       Delivery Location
+    </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+  <div>
+    <img class="thumbnail_style" src="../../assets/imgs/location.png">
+</div>
+
+  <ion-item class="special_pric">
+    <ion-label>Select Area</ion-label>
+    <ion-select [(ngModel)]="Area" (ionChange)= SetArea(Area)>
+    <ion-option [value]="item.AREA_NAME" *ngFor="let item of dataset">{{item.AREA_NAME}}</ion-option>
+   </ion-select>
+</ion-item>
+
+ <ion-item *ngFor="let item of localitydetails" class="special_pric">
+  {{item.LOCATION_NAME}}
+ </ion-item>
+</ion-content>
