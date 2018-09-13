@@ -1,0 +1,49 @@
+page-menu {
+    .text-primary {
+        color: color($colors, primary);
+      }
+    .item-borderless
+    {
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+.list a.item
+{
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+}
+.card-background-page {
+
+ ion-card {
+    position: relative;
+    text-align: left;
+    background-color: #32db64;
+    }
+}
+.font_description_header
+{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight:400;
+    font-size: 14px;
+    //color:#878787;
+    color:white;
+    //line-height:15px;
+   background-color: #454545;
+   min-height: 20px!important;
+}
+.card, .card-md, .card-ios {
+    //webkit-box-shadow: none;
+    box-shadow: none;
+}
+.wordwrapWITHWidth
+{   font-family: Roboto, Arial, sans-serif;
+    //color:white;
+    font-size: 12px;
+    // width:50%;
+   // word-wrap: break-word;
+    //background-color:white;
+}
+  
+}

@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar color="primary" text-left>
+    <ion-title>
+      <img src="assets/imgs/applogo.png" class="logo_style" > 
+  </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content scrollbar-y-auto>
+  <div class="searchbar_style">
+      <ion-searchbar class="item_pad" placeholder="Check delivery location"
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (click)="onInput()"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+    
+  </div>
+  <ion-slides autoplay="3000" loop pager="true" class="slide_style">
+      <ion-slide>
+          <img src="assets/imgs/fruit.png" class="slide_style">
+      </ion-slide>
+      <ion-slide>
+          <img src="assets/imgs/milk.jpg" class="slide_style">
+      </ion-slide>
+      <ion-slide>
+          <img src="assets/imgs/water.jpg" class="slide_style">
+      </ion-slide>
+    </ion-slides>
+  <ion-grid>
+      <ion-list>
+          <button ion-item (click)="openwater()">
+              <img src="assets/imgs/water.png" alt="">
+              <div class="item-note" item-end>
+               RO water bottle
+              </div>
+            </button>
+            <button ion-item (click)="openjuice()">
+                <img src="assets/imgs/juice.png" alt="">
+                <div class="item-note" item-end>
+                 Raw fresh juice
+                </div>
+              </button>
+              <button ion-item (click)="openmilk()">
+                  <img src="assets/imgs/milk.png" alt="">
+                  <div class="item-note" item-end>
+                  Fresh Milk and Products
+                  </div>
+                </button>
+                <button ion-item (click)="openbakery()">
+                    <img src="assets/imgs/bread.png" alt="">
+                    <div class="item-note" item-end>
+                     Bread and Bakery
+                    </div>
+                  </button>
+      </ion-list>
+        
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+    Daily
+  </ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-title text-center>Bakery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item *ngFor="let item of dataset">
+        <ion-thumbnail item-left>
+            <img src="{{item.P_IMAGE}}">
+        </ion-thumbnail>
+        
+        <div class="font_headline">{{item.P_NAME}}</div> 
+        <div class="quantity_text"> {{item.P_QUANT}}</div>
+        <div class="price_text">₹ {{item.P_PRICE}}</div>
+        
+        <button ion-button outline item-end color="third" (click)="viewdetails(item)">View Item</button>
+      
+        </ion-item>
+</ion-content>

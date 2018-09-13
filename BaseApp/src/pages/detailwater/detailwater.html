@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title text-center>{{data.P_NAME}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <div>
+      <img class="thumbnail_style" src="{{data.P_IMAGE}}">
+  </div>
+  <div class="font_headline">
+      {{data.P_NAME}} ( {{data.P_QUANT}} )
+  </div>
+  <div class="special_pric">
+    Special price
+  </div>
+  <div class="price_text">
+      ₹ {{data.P_PRICE}}
+  </div>
+  <div>
+     <button ion-button outline item-start (click)="gotopayment(data)">Buy Now</button>
+  </div>
+  <div class=".font_description_header">
+  Highlights:
+  </div>
+   <div class="font_description_text">
+  {{data.P_DESCRIPTION}}
+  </div>
+
+
+   
+ </ion-content>

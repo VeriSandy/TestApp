@@ -1,0 +1,56 @@
+<ion-header>
+<ion-navbar color="primary">
+    <ion-title text-center>
+     My Wallet
+  </ion-title>
+  </ion-navbar>
+</ion-header> 
+
+
+<ion-content padding>
+<div *ngIf="loggedoff">
+<img class="thumbnail_style" src="../../assets/imgs/sorry2.png">
+</div>
+<ion-item *ngIf="loggedoff">
+<div class="font_headline2">
+Please login to explore
+</div>
+<div class="font_headline2">
+<button ion-button outline item-start color="primary" (click)="gotologin()">Login here</button>
+</div>
+</ion-item>
+<ion-item *ngIf="loggedin">
+    <div class="font_headline">
+    Daily Wallet Balance : 
+    </div>
+    <div class="price_text">
+     ₹ {{main_balance}}
+    </div>
+    
+</ion-item>
+ <ion-item class="special_pric" *ngIf="loggedin">
+  Security Deposit : ₹ {{sec_deposit}}
+</ion-item>
+<ion-item class="special_pric" *ngIf="loggedin">
+Planner Balance : ₹ {{planner_balance}}
+</ion-item>
+<ion-item class="special_pric" tappable (click)="addMoneyInwallet()" *ngIf="loggedin" no-lines>
+Add money to Daily wallet
+</ion-item>
+<div *ngIf="loggedin">
+<hr style="border: 2px groove lightblue;" />
+
+</div>
+<div *ngIf="loggedin">
+<ion-item *ngFor="let item of dataset2" text-wrap>
+                <img src="assets/imgs/transaction.png" alt="" item-start>
+                <div class="font_headline3">{{item.PAID_AT}}</div> 
+                <div class="special_pric2"> {{item.TANS_DATE}}</div>
+                <div class="price_text2" item-end>{{item.TRANS_SIGN}} ₹ {{item.AMOUNT_ADDED}}</div>
+                
+</ion-item>
+</div>
+<ion-item *ngIf="loggedin" text-wrap no-lines>
+For more statement please contact us.
+</ion-item>
+</ion-content>

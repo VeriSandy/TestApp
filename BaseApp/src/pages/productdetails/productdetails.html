@@ -1,0 +1,42 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-title text-center>{{data.P_NAME}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  <ion-content >
+    <div>
+        <img class="thumbnail_style" src="{{data.P_IMAGE}}">
+    </div>
+    <ion-item no-lines>
+    <div class="font_headline">
+        {{data.P_NAME}} ( {{data.P_QUANT}} )
+    </div>
+    <div class="special_pric">
+      Cutoff time : 4:00 PM
+      </div>
+      <div class="price_text">
+          ₹ {{data.P_PRICE}}
+      </div>
+      <div class="font_headline" item-right>
+          <ion-icon name="remove-circle" color="twitter" (click)="decrement()"></ion-icon>
+          {{currentNumber}}
+          <ion-icon name="add-circle" color="twitter"(click)="increment()"></ion-icon>
+      </div>
+    </ion-item>
+     
+        
+      <button ion-button block item-width="50%" color="danger">Planner</button>
+      <button ion-button block item-width="50%" color="danger" (click)="gotopayment(data)">Order once</button>
+    
+ 
+  <ion-item no-lines>
+    <div class=".font_description_header">
+    Details:
+    </div>
+     <div class="font_description_text">
+    {{data.P_DESCRIPTION}}
+    </div>
+  </ion-item>
+ </ion-content>

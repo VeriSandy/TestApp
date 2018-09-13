@@ -1,0 +1,64 @@
+page-detailwater {
+    
+   
+    .font_headline
+    {
+        font-family: Roboto, Arial, sans-serif;
+        //font-style: normal;
+        font-size: 18px;
+        line-height:28px;
+        text-align: left;
+        color:#212121;
+        font-weight:400;
+    }
+    .special_pric
+    {
+        font-family: Roboto, Arial, sans-serif;
+       // font-style: normal;
+       font-weight:400;
+        font-size: 14px;
+        color:#26a541;
+        line-height:19.6px;
+
+       // text-align: center;
+    }
+    .price_text
+    {
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 28px;
+        font-weight:500;
+        line-height:39.2px;
+
+
+    }
+    .font_description_header
+    {
+        font-family: Roboto, Arial, sans-serif;
+        font-weight:400;
+        font-size: 14px;
+        color:#878787;
+        line-height:25px;
+        
+    }
+    .font_description_text
+    {
+        font-family: Roboto, Arial, sans-serif;
+        //font-weight:400;
+        font-size: 14px;
+        color:#878787;
+        line-height:19.6px;
+        display: block;
+        padding: 10px 10px 0px 10px;
+    }
+    .ion-card {
+        border: none !important;
+      }
+    .thumbnail_style
+    {
+      height: 30vh;
+       width: auto;
+       margin: auto;
+       display: block;
+      // text-align: center;
+    }
+}

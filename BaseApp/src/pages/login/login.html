@@ -1,0 +1,23 @@
+<ion-content padding="true">
+    <div class="login-content">
+
+        <!-- Logo -->
+        <div padding-horizontal text-center>
+          <div class="logo">
+             <img src="../../assets/imgs/loginlogo.png" class="logo">
+          </div>
+          <p text-center ion-text padding=true color="dark"><strong>Please enter phone no</strong></p>
+          <ion-item>
+              <ion-label floating>
+                <ion-icon name="call" item-start class="text-primary"></ion-icon>
+                Mobile no
+              </ion-label>
+              <ion-input type="tel" maxlength="10" [(ngModel)]="user_mobile" (input)="onSearchChange($event.target.value)"></ion-input>
+            </ion-item>
+            <div padding>
+                <button padding ion-button color="twitter" (click)="GenOTP()" *ngIf="showbutton" >Proceed</button>
+
+            </div>
+          </div>
+        </div>
+  </ion-content>
